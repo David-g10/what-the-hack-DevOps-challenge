@@ -1,8 +1,8 @@
-  name: Deploy to Azure
-  on:
-    pull_request:
-      branches:
-        - main
+name: Deploy to Azure
+on:
+  push:
+    branches:
+      - main
 
   jobs:
     deploy:
