@@ -7,9 +7,9 @@ on:
       - main
 
 jobs:
-  deploy:
-    if_merged:
-      if: github.event.pull_request.merged == true
+  if_merged:
+    if: github.event.pull_request.merged == true
+    deploy:
       runs-on: ubuntu-latest
       steps:
         - name: Checkout code
