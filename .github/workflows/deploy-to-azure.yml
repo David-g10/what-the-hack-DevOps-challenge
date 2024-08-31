@@ -1,5 +1,9 @@
 name: Deploy to Azure
-on: [workflow_dispatch]
+on:
+  pull_request:
+    branches:
+      - main
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
